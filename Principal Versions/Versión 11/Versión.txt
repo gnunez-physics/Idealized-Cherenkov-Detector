@@ -1,0 +1,11 @@
+Primero añadí el material de vidrio que es el que reviste los circuitos eléctricos y el fotocatodo del foto multiplicador. Solamente añadí una sola capa de vidrio con poco grosor e hice incidir la radiación chernekov del cilindro al vidrio y los fotones chernekov se detenían, parece que el vidrio absorbia la radiación que salía del cilindro. Lo raro de todo esto es que yo no había añadido aun las propiedades ópticas al vidrio, ni rindex ni refracción ni nada. 
+
+Hice incidir directamente un muon de 5GeV al vidrio y este lo traspasaba directamente. Esto se debe a que la libreria de propiedades electromagnéticasticas están activas en las partículas de los muones lo único que basta es que sepan que está definido la densidad y la composición química del material para poder interactuar.
+
+En cambio para la luz Cherenkov, esta se rige por procesos ópticos. Entonces Geant4 exige obligatoriamente que el material tenga una tabla de propiedades con el índice de refracción, que es lo que le falta a esta versión para completar el problema. 
+
+A continuación añadí el fotocatodo, este está hecho de Bialcalino, y añadí sus propiedades ópticas para absorber el fotón Cherenkov, puse las dos placas con dimensiones pequeñas para probar que funcione la absorción. 
+
+Vale, lo que ocurría es que no le había añadido añadido un índice de reflexión al fotocatodo, cuando se lo añadí ahí si las partículas pasaron de largo, lo que es más realista.
+
+Un interesante análisis sería aumentar el espesor del fotocatodo y ver como afecta en la curva que se genera en la gráfica del three, se podría hacer un ajuste de curva?

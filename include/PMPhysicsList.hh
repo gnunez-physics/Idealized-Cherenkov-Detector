@@ -1,0 +1,13 @@
+#ifndef PMPHYSICSLISTS_HH
+#define PMPHYSICSLISTS_HH
+
+#include "G4VModularPhysicsList.hh"
+
+class PMPhysicsList : public G4VModularPhysicsList
+{
+public:
+    PMPhysicsList();
+    ~PMPhysicsList();
+};
+
+#endif // PMPHYSICSLISTS_HH

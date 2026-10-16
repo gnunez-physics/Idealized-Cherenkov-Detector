@@ -1,0 +1,3 @@
+Se puso la condición de que el fotocatodo solo tome los muones que pasan por el vidrio y la resina, no por el borde grueso del fotocatodo
+
+Correr 100000 muones

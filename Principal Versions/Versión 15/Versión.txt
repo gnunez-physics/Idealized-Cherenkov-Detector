@@ -1,0 +1,11 @@
+"Debido a la naturaleza ultra-relativista de los muones incidentes (\(E_k = 2\text{ GeV}\)), los efectos de dilatación temporal bajo la Relatividad Especial incrementan su vida media efectiva en el sistema de referencia del laboratorio a \(\tau \approx 42\ \mu\text{s}\). Dado que el tiempo de tránsito de la partícula a través de la altura activa del cilindro de agua (40 cm) es de \(\approx 1.33\text{ ns}\), la probabilidad de decaimiento del muón dentro del volumen del detector es despreciable (\(P < 10^{-5}\)). Por lo tanto, el proceso de decaimiento de muones fue omitido de la lista de físicas activas en Geant4 por optimización computacional, concentrando el análisis puramente en la producción y transporte de radiación Cherenkov."
+
+Obtuve la gráfica, tabla de datos, de la eficiencia cuántica de R5912-100 gracias a WebPlotDigitizer, está en la carpeta "Eficiencia Cuántica", la gráfica me dio super super parecido.
+
+Cree una carpeta llamada eff_dat donde guardo el script que me grafica el Default Dataset.csv y otro que me hace el eff.dat, este me hace la columna de eficiencia a lineal y divide en 100 para sacar porcentaje, y la columna de longitud de onda lo deja tal cual, creo que aproximando o truncando.
+
+He añadido la eficiencia cuántica a los fotocatodos, disminuyendo severamente las entradas al sensor.
+
+Y Generé algunos script para ver cosas y resultados sobre los .root que me genera la gráfica
+
+

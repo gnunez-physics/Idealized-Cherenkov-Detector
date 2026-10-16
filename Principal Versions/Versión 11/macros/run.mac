@@ -1,0 +1,7 @@
+# 1. Inicializar obligatoriamente el motor de ejecución y la física
+/run/initialize
+
+# 2. Configurar la partícula y su energía, seguido de los eventos
+/gun/particle mu+
+/gun/energy 3. GeV
+/run/beamOn 2500

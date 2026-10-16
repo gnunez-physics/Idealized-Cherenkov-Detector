@@ -1,0 +1,37 @@
+# 1. INICIALIZACIÓN DE LA SIMULACIÓN
+# Prepara y procesa toda la geometría y los modelos físicos definidos en el código.
+/run/initialize
+
+# 2. CONFIGURACIÓN DE LA VENTANA GRÁFICA
+# Abre una ventana de visualización utilizando OpenGL (OGL) con una resolución de 600x600 px.
+/vis/open OGL 600x600-0+0
+
+# Define el punto de vista inicial de la cámara (vector tridimensional x, y, z)
+/vis/viewer/set/viewpointVector 1 1 1
+
+# Establece el eje Z como la dirección vertical ("hacia arriba") en la pantalla
+/vis/viewer/set/upVector 0 0 1
+
+# Activa la actualización automática de la ventana ante cualquier cambio
+/vis/viewer/set/autoRefresh true
+
+# 3. DIBUJO Y RENDERIZADO DE LA ESCENA
+# Dibuja en la pantalla todos los volúmenes geométricos del mundo virtual.
+/vis/drawVolume
+
+# 4. CONFIGURACIÓN DE TRAYECTORIAS Y ACUMULACIÓN
+# Dibuja de forma suave y continua las trayectorias de las partículas.
+/vis/scene/add/trajectories smooth
+
+# Acumula las trayectorias de múltiples eventos en pantalla en lugar de sobreescribirlas.
+/vis/scene/endOfEventAction accumulate
+
+# 5. ELEMENTOS DE REFERENCIA ESPACIAL (AYUDAS VISUALES)
+# Añade una barra de escala visual de referencia en el espacio.
+/vis/scene/add/scale 1 m
+
+# Dibuja los ejes coordenados (X, Y, Z) centrados en el origen (0, 0, 0) de 1 metro de largo.
+/vis/scene/add/axes 0 0 0 0.5 m
+
+# Muestra en pantalla el identificador (ID) numérico de cada evento en ejecución.
+/vis/scene/add/eventID
